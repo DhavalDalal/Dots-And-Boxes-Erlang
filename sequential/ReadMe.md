@@ -1,15 +1,8 @@
 This game is very well described here https://icebreakerideas.com/fun-games-to-play-at-home/#Dots_and_Boxes
 
-Copy pasting the rules here once more.
-
-game begins with empty grid of dots
-players take turns at adding a horizontal or vertical line between two un-joined adjacent dots
-a player who completes the fourth side of a 1x1 box earns a point, writes their initials in the box and gets another turn.
-game is over when there are no more lines that can be placed
-winner is the player with most boxes
-the board can be of any size 2x2, 5x5 works well for experts
 To compile the game:
 
+```
 1> c(dots_and_boxes).
 {ok,dots_and_boxes}
 To run the game:
@@ -62,7 +55,8 @@ To run the game:
 
 *** Game Over ***
 Game has Drawn!!
-Detailed Results: [{"foo",2},{"bar",2}]```
+Detailed Results: [{"foo",2},{"bar",2}]
+```
 
 You can also play this manually by using the dots/2 and boxes/1 functions once to create the grid and then use the join/4 functions for every turn of the player.
 
