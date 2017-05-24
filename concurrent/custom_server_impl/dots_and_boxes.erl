@@ -85,20 +85,22 @@ auto_play_loop(Game, Tag) ->
 
 create_game(Client, Players, XDots, YDots) ->
   case rpc(Client, {create, Players, XDots, YDots}) of
+    Error = {error, _} ->
+      Error;
+      
     {TextUi, NextPlayer} ->
       io:format(TextUi),
-      io:format("Now ~p's turn~n", [NextPlayer]);
-      
-    Error -> Error
+      io:format("Now ~p's turn~n", [NextPlayer])
   end.
 
 join(Client, D1, D2, Player) ->
   case rpc(Client, {join, D1, D2, Player}) of
+    Error = {error, _} -> 
+      Error;
+      
     {Game, NextPlayer} ->
       io:format(Game),
-      io:format("Now ~p's turn~n", [NextPlayer]);
-      
-    Error -> Error
+      io:format("Now ~p's turn~n", [NextPlayer])
   end.
   
 is_game_over(Client) ->
