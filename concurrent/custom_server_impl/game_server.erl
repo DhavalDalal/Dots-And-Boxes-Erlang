@@ -145,7 +145,7 @@ find_game(Pid, Games) ->
       {ok, Game}
   end.
 
-turn(Player, D1, D2, {game,Players,Grid,NextPlayer}) when NextPlayer == Player ->
+turn(Player, D1, D2, {game, Players, Grid, Player}) ->
   case join(D1, D2, Player, Grid) of
     {NextGrid, true} -> 
       {ok, {game, Players, NextGrid, Player}};
