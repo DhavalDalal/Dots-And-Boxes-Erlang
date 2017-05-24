@@ -1,5 +1,5 @@
-Concurrent Erlang
-=================
+Custom Server
+=============
 
 To Compile the game:
 
@@ -153,7 +153,7 @@ true
 ...
 ...
 ...
-The game runs
+The game runs to completion
 
 ```
 
@@ -168,6 +168,6 @@ true
 ...
 ...
 ...
-The game runs
+The game runs to completion
 
 ```
