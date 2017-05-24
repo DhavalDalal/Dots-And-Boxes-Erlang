@@ -1,4 +1,5 @@
-This game is very well described here https://icebreakerideas.com/fun-games-to-play-at-home/#Dots_and_Boxes
+Sequential Erlang
+=================
 
 To compile the game:
 
