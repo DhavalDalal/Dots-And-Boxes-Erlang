@@ -32,5 +32,5 @@ From scaling perspective, one can increase the number of ```game_server ```s and
 
 There are 2 implementations:
 1. Custom Server
-2. Using Gen Server (TODO)
+2. Using Gen Server and Gen Supervisor (TODO)
 
